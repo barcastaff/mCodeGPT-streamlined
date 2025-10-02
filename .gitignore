@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Agent instructions
+/.github/
+
+# mCodeGPT specific cache files and directories
+.litellm_cache/
+.gene_requests_cache.sqlite
+*.sqlite
+*.sqlite3
+*.db
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
