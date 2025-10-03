@@ -6,9 +6,10 @@ import copy
 import csv
 
 import openai
+import requests
 
 class mCodeGPT:
-    def __init__(self, df_ontology, df_prompt, df_promptYesNo, deployment_name, input_text, method):
+    def __init__(self, df_ontology, df_prompt, df_promptYesNo, deployment_name, input_text, method, provider='ollama', ollama_model=None, ollama_url=None):
 
         # Create a directed graph
         self.G = nx.DiGraph()
@@ -19,6 +20,9 @@ class mCodeGPT:
         self.input_txt = input_text
         self.deployment_name = deployment_name
         self.method =  method
+        self.provider = provider
+        self.ollama_model = ollama_model
+        self.ollama_url = ollama_url
 
         # Initialize variables to keep track of the parent node at each level
         parents = {}
@@ -240,9 +244,61 @@ class mCodeGPT:
             max_tokens=max_tokens)
         return response
 
+    def ollama_client(self, prompt):
+
+        max_tokens = 6000
+
+        prompt += '\n\nText:\n'
+        prompt += self.input_txt
+
+        url = f"{self.ollama_url}/api/chat"
+        payload = {
+            "model": self.ollama_model,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ],
+            "stream": False,
+            "options": {
+                "num_predict": max_tokens
+            }
+        }
+
+        response = requests.post(url, json=payload)
+        response_data = response.json()
+        
+        # Check for errors in the response
+        if response.status_code != 200:
+            raise Exception(f"Ollama API error: {response.status_code} - {response_data}")
+        
+        return response_data
+
+    def llm_client(self, prompt):
+        """Unified client that routes to the appropriate LLM provider"""
+        if self.provider == 'openai':
+            return self.openai_client(prompt)
+        elif self.provider == 'ollama':
+            return self.ollama_client(prompt)
+        else:
+            raise ValueError(f"Unknown provider: {self.provider}")
+
     def parse_output(self, response):
-        response_content = response['choices'][0]['message']['content']
-        response_content
+        # Handle different response formats based on provider
+        if self.provider == 'openai':
+            response_content = response['choices'][0]['message']['content']
+        elif self.provider == 'ollama':
+            # Ollama response structure: check for both possible formats
+            if 'message' in response:
+                response_content = response['message']['content']
+            elif 'response' in response:
+                response_content = response['response']
+            else:
+                # Debug: print the actual response structure
+                raise ValueError(f"Unexpected Ollama response format. Response keys: {response.keys()}")
+        else:
+            raise ValueError(f"Unknown provider: {self.provider}")
 
         # Split the input data into lines
         lines = response_content.split('\n')
@@ -288,7 +344,7 @@ class mCodeGPT:
     def run(self):
         if self.method == 'RLS':  # method 1
             prompt = self.method1()
-            response = self.openai_client(prompt)
+            response = self.llm_client(prompt)
             df_output = self.parse_output(response)
             return df_output
 
@@ -311,7 +367,7 @@ class mCodeGPT:
                     break
 
                 # openai
-                response = self.openai_client(prompt)
+                response = self.llm_client(prompt)
 
                 # parse
                 df_output = self.parse_output(response)
@@ -341,7 +397,7 @@ class mCodeGPT:
             '''# step 1: ask yes/no question'''
             prompt = self.method3(output_csv=None)
             # openai
-            response = self.openai_client(prompt)
+            response = self.llm_client(prompt)
             # parse
             df_output = self.parse_output(response)
 
@@ -350,7 +406,7 @@ class mCodeGPT:
             '''# step 2: ask what question'''
             prompt = self.method3(df_output)
             # openai
-            response = self.openai_client(prompt)
+            response = self.llm_client(prompt)
             # parse
             df_output = self.parse_output(response)
             #             print('Finish what')
