@@ -45,22 +45,26 @@ class mCodeGPT:
         for index, row in self.df_prompt.iterrows():
             for i, cell in enumerate(row):
                 if pd.notna(cell):  # Skip NaN values
-                    node_label = str(self.df_ontology.iat[index, i]).strip('"')  # Get the corresponding node label
-                    node_label = node_label.strip().lower().replace(' ', '_').replace('-', '_')
-                    description = str(cell).strip('"')  # Get the description
-                    self.G.nodes[node_label]['description'] = description  # Add description as an attribute to the node
-                    self.G.nodes[node_label][
-                        'information_present_flag'] = 'YES'  # Add description as an attribute to the node
+                    ontology_cell = self.df_ontology.iat[index, i]
+                    if pd.notna(ontology_cell):  # Also check if the ontology node is not NaN
+                        node_label = str(ontology_cell).strip('"')  # Get the corresponding node label
+                        node_label = node_label.strip().lower().replace(' ', '_').replace('-', '_')
+                        description = str(cell).strip('"')  # Get the description
+                        self.G.nodes[node_label]['description'] = description  # Add description as an attribute to the node
+                        self.G.nodes[node_label][
+                            'information_present_flag'] = 'YES'  # Add description as an attribute to the node
 
         # This is for method 3: only leaf node has attribute 'description(yesno)'
         for index, row in self.df_promptYesNo.iterrows():
             for i, cell in enumerate(row):
                 if pd.notna(cell):  # Skip NaN values
-                    node_label = str(self.df_ontology.iat[index, i]).strip('"')  # Get the corresponding node label
-                    node_label = node_label.strip().lower().replace(' ', '_').replace('-', '_')
-                    description = str(cell).strip('"')  # Get the description
-                    self.G.nodes[node_label][
-                        'description(yesno)'] = description  # Add description as an attribute to the node
+                    ontology_cell = self.df_ontology.iat[index, i]
+                    if pd.notna(ontology_cell):  # Also check if the ontology node is not NaN
+                        node_label = str(ontology_cell).strip('"')  # Get the corresponding node label
+                        node_label = node_label.strip().lower().replace(' ', '_').replace('-', '_')
+                        description = str(cell).strip('"')  # Get the description
+                        self.G.nodes[node_label][
+                            'description(yesno)'] = description  # Add description as an attribute to the node
 
         """
         G_update: the update of G with 'information_present_flag' changed based on previous layer
