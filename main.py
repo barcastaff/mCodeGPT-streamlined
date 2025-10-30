@@ -22,8 +22,8 @@ if __name__ == '__main__':
     parser.add_argument('-d', '--deployment_name', help="Specify the Azure OpenAI deployment name for your program, for example, 'mcodegpt_gpt_35'")
     parser.add_argument('--ollama_model', help="Specify the Ollama model name (e.g., 'gemma3','llama2')", default='gemma3')
     parser.add_argument('--ollama_url', help="Specify the Ollama API URL", default='http://localhost:11434')
-    parser.add_argument('-m', '--method', help="Specify the prompt generating algorithm for your program, for example, 'RLS', 'BFOP', '2POP'")
-    parser.add_argument('-o', '--output', help="Specify the output file name")
+    parser.add_argument('-m', '--method', help="Specify the prompt generating algorithm for your program, for example, 'RLS', 'BFOP', '2POP'", default='RLS', choices=['RLS', 'BFOP', '2POP'])
+    parser.add_argument('-o', '--output', help="Specify the output file name", default='output')
     
     args = parser.parse_args()
 
