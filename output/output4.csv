@@ -1,0 +1,65 @@
+,Key,Value
+0,identifier, N/A
+1,collection_site, N/A
+2,specimen_type, N/A
+3,name, John Doe
+4,contact_info, N/A
+5,birth_date, N/A
+6,gender, Male
+7,zip_code, N/A
+8,us_core_race, White
+9,us_core_birth_sex, Male
+10,us_core_ethnicity, N/A
+11,death_date, N/A
+12,evidence_type, N/A
+13,tumor_identifier, N/A
+14,body_location, lung
+15,longest_dimension, N/A
+16,other_dimension, N/A
+17,staging_method, N/A
+18,lymphoma_stage, N/A
+19,t_category, N/A
+20,n_category, N/A
+21,m_category, N/A
+22,stage_type, N/A
+23,asserted_date, 2023-01-10
+24,histology/morphology, Non-Small Cell Lung Cancer (NSCLC)
+25,body_site, N/A
+26,secondary_cancer_condition, N/A
+27,test_type, N/A
+28,result_value, N/A
+29,medication, EGFR Tyrosine Kinase Inhibitors (TKIs)
+30,reason, N/A
+31,procedure_intent, N/A
+32,satus_reason, N/A
+33,medicaiton, pembrolizumab
+34,status_reason, N/A
+35,procedure_code, N/A
+36,number_of_sessions, N/A
+37,modality, N/A
+38,technique, N/A
+39,total_dose, N/A
+40,number_of_fractions, N/A
+41,volume_type, N/A
+42,radiotherapy_volumn, N/A
+43,history_of_metastatic_cancer, N/A
+44,comorbidities, N/A
+45,remonic_variant, N/A
+46,variation_code, N/A
+47,genomic_hgvs, N/A
+48,coding_change_type, N/A
+49,protein_hgvs, N/A
+50,amino_acid_change_type, N/A
+51,molucular_consequence, N/A
+52,cytogen_nomemclature, N/A
+53,gene_studied," EGFR, TP53, KRAS, PDL1"
+54,genomic_source_class, N/A
+55,copy_number, N/A
+56,allelic_frequency, N/A
+57,allelic_state, N/A
+58,cytogenetic_location, N/A
+59,gene_mutations," EGFR mutation, TP53 mutation"
+60,coordinate_system, N/A
+61,ranges_examined, N/A
+62,region_description, N/A
+63,reference_sequence, N/A
