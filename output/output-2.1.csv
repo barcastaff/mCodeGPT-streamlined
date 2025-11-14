@@ -1,0 +1,65 @@
+,Key,Value
+0,identifier, N/A
+1,collection_site, Breast
+2,specimen_type, Tissue
+3,name, Jenny M.
+4,contact_info, N/A
+5,birth_date, 1960-01-01 (estimated based on age)
+6,gender, Female
+7,zip_code, N/A
+8,us_core_race, White
+9,us_core_birth_sex, Female
+10,us_core_ethnicity, N/A
+11,death_date, N/A
+12,evidence_type, Breast Cancer
+13,tumor_identifier, N/A
+14,body_location, Breast
+15,longest_dimension, 2.5 cm
+16,other_dimension, N/A
+17,staging_method, cT3N0
+18,lymphoma_stage, N/A
+19,t_category, T3
+20,n_category, N0
+21,m_category, M0
+22,stage_type, Stage IIB
+23,asserted_date, 2018-02-01
+24,histology/morphology," Invasive ductal adenocarcinoma, grade 2"
+25,body_site, Breast
+26,secondary_cancer_condition, N/A
+27,test_type," 21-gene RT-PCR assay, Tumor marker tests (ER positive, PR negative, HER2 negative)"
+28,result_value, 47
+29,medication," AC-T chemotherapy (doxorubicin, cyclophosphamide, paclitaxel)"
+30,reason, Cancer treatment
+31,procedure_intent, Cancer treatment
+32,satus_reason, N/A
+33,medicaiton," Doxorubicin, Cyclophosphamide, Paclitaxel"
+34,status_reason, Cancer treatment
+35,procedure_code, N/A
+36,number_of_sessions, N/A
+37,modality," Whole breast radiation therapy, regional nodal irradiation"
+38,technique, N/A
+39,total_dose, N/A
+40,number_of_fractions, N/A
+41,volume_type, N/A
+42,radiotherapy_volumn, N/A
+43,history_of_metastatic_cancer, N/A
+44,comorbidities," Depression, anxiety, hypertension, smoking history"
+45,remonic_variant, c.3549C>A
+46,variation_code, N/A
+47,genomic_hgvs, NR_047487.1+1353C>A
+48,coding_change_type, Missense
+49,protein_hgvs, PALB2
+50,amino_acid_change_type, Cysteine to Alanine
+51,molecular_consequence, Putative Damaging Effect on Protein
+52,cytogen_nomenclature, N/A
+53,gene_studied, PALB2
+54,genomic_source_class, Protein Coding
+55,copy_number, N/A
+56,allelic_frequency, N/A
+57,allelic_state, Pathogenic
+58,cytogenetic_location, 11q13
+59,gene_mutations, N/A
+60,coordinate_system, N/A
+61,ranges_examined, N/A
+62,region_description, N/A
+63,reference_sequence, NM_000331.3

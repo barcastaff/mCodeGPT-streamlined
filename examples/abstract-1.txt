@@ -1,0 +1,5 @@
+Patient John Smith (HSI-5421) underwent a tissue biopsy at the bladder collection site. The histopathology report confirmed the presence of cancer in the bladder. The tumor, identified as T-BC5421, measures 4 cm in its longest dimension. The cancer has been staged as T2, indicating its progression beyond the bladder wall. The cancer was asserted on January 10, 2022. The tumor marker test revealed elevated levels of urinary bladder tumor antigen (UBTA). John Smith, a Caucasian male born on April 15, 1975, is non-Hispanic and resides in zip code 90210. He is still alive, with no reported death date at this time. 
+
+Treatment options were discussed between the patient and the medical oncologist. With an ECOG performance score of 0, the patient agrees to receive an AC-T chemotherapy regimen. He received four cycles of doxorubicin (60 mg/m² IV) and cyclophosphamide (600 mg/m² IV) followed by paclitaxel (175 mg/m² IV) (AC-T), administered on a dose-dense schedule.
+
+For any further information, please contact John Smith at jsmith@email.com or (555) 123-4567.

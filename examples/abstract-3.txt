@@ -1,0 +1,44 @@
+DATE OF CONSULTATION: MM/DD/YYYY
+
+REFERRING PHYSICIAN: John Doe, MD
+
+HISTORY OF PRESENT ILLNESS: The patient is a pleasant (XX)-year-old Hispanic female with a past medical history significant for a recently diagnosed breast cancer. The patient was admitted for a planned right modified radical mastectomy, which was performed. The patient was found to have evidence of a 2.6 x 2.6 x 1.8 cm invasive ductal carcinoma with foci of ductal carcinoma in situ. The patient had 23 lymph nodes resected with 10 positive for metastatic disease. The margins were uninvolved by invasive carcinoma. The estrogen, progesterone, as well as HER2/neu receptors are still pending at this time. The patient is currently recovering relatively nicely without any major complications.
+
+PAST MEDICAL HISTORY: The patient’s past medical history is significant for:
+1. Hysterectomy.
+2. Cholecystectomy.
+3. Left and right hip replacement surgery.
+4. Left inguinal hernia repair.
+5. Lumbar laminectomy.
+6. Cecal resection of a large tubulovillous adenoma of the cecum,
+7. Right inguinal herniorrhaphy.
+
+ALLERGIES: NKDA.
+
+MEDICATIONS: The patient’s medications included:
+1. Labetalol.
+2. Norvasc.
+3. Lisinopril/hydrochlorothiazide.
+4. Bumex.
+
+SOCIAL HISTORY: Noncontributory.
+
+FAMILY HISTORY: Unremarkable for any underlying malignancies.
+
+REVIEW OF SYSTEMS: In terms of review of systems, the patient denies of any significant headache, blurry vision, or double vision. No fever, shaking chills, or night sweats. No cough, no shortness of breath. The patient is having some chest wall discomfort. No abdominal pain. No nausea or vomiting. Her appetite is stable.
+
+PHYSICAL EXAMINATION:
+GENERAL: The patient is alert and oriented x3, in no distress.
+VITAL SIGNS: Stable. She is afebrile.
+HEENT: Oropharynx is clear. Sclerae anicteric.
+NECK: Supple.
+LUNGS: Clear to auscultation anteriorly.
+CARDIOVASCULAR: Regular rate and rhythm. Normal S1, S2.
+ABDOMEN: Soft, nontender, nondistended. Positive bowel sounds. No palpable hepatosplenomegaly. Ventral hernia palpated.
+EXTREMITIES: With 1+ edema bilaterally.
+
+LABORATORY STUDIES: Shows a white count of 6.6, hemoglobin 10.8, platelet count 208,000. Sodium 136, potassium 4.6, chloride 102, bicarbonate 26, BUN 14, creatinine 1.0, glucose 154. INR 1.0, PTT 28. AST 21, ALT 51, alkaline phosphatase 128, total bilirubin 0.4. Troponin of less than 0.5. Calcium of 8.6.
+
+ASSESSMENT:  T2 N3 MX invasive ductal carcinoma.
+
+PLAN:  We will check a CT scan of the chest and her pelvis to assure there is no evidence of metastatic disease. We feel it would also be reasonable to consult Radiation Oncology for adjuvant radiation therapy as the patient has multiple lymph nodes involved with an increased risk of local recurrence. We are still waiting for the estrogen, progesterone, and HER2/neu status after which we will make final recommendations in terms of hormonal therapy.

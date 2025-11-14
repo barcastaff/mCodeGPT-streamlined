@@ -15,7 +15,7 @@ if __name__ == '__main__':
     df_promptYesNo = pd.read_excel('./ontology/mcode_structure_modified.xlsx', sheet_name="Prompt(yesno)")
 
     parser.add_argument('-i','--input_file', help="Specify the input file for your program. For example, './input_file.txt'")
-    parser.add_argument('-p', '--provider', help="Specify the LLM provider: 'openai' or 'ollama'", default='openai', choices=['openai', 'ollama'])
+    parser.add_argument('-p', '--provider', help="Specify the LLM provider: 'openai' or 'ollama'", default='ollama', choices=['openai', 'ollama'])
     parser.add_argument('-k', '--api_key', help="Specify the Azure OpenAI API key for your program. For example, 'f90hsd8jnigkmr3253908yrh7gybfgu93qi4'")
     parser.add_argument('-b', '--api_base', help="Specify the Azure OpenAI base for your program. For example, 'https://deploymentname.openai.azure.com/'")
     parser.add_argument('-v', '--api_version', help="Specify the Azure OpenAI version file for your program, for example, '2023-05-15'")
